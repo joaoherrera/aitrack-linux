@@ -96,7 +96,7 @@ unix: packagesExist(libxsettings-client) {
 }
 
 unix:{
-    QMAKE_LFLAGS += "-Wl,-rpath,\'\$$ORIGIN/../share/aitrack/lib\'"
+    QMAKE_LFLAGS += "-Wl,-lX11,-rpath,\'\$$ORIGIN/../share/aitrack/lib\'"
 }
 
 LIBS += -L onnxruntime-linux-x64-1.4.0/lib -lonnxruntime -fopenmp
